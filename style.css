@@ -73,7 +73,7 @@ body{
 }
 .tasks.overflow{
     overflow-y: auto;
-    max-height: 30px;
+    max-height: 300px;
 }
 .tasks::-webkit-scrollbar{
     width: 10px;
@@ -85,4 +85,41 @@ body{
 .tasks::-webkit-scrollbar-thumb{
     background: #0D75EC;
     border-radius: 25px;
+}
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 10px 10px;
+    display: flex;
+    width: 100%;
+}
+.delete{
+    right: -5px;
+    padding: 5px 5px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    transform-origin: top right;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+#check-task{
+    margin-right: 20px;
+}
+.task label{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+}
+.task label p.checked{
+    text-decoration: line-through;
+}
+.task label input{
+    margin-top: 3px;
 }
